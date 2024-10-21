@@ -387,3 +387,71 @@ function wrap_only_submenu_in_div($menu_html, $args) {
 }
 
 add_filter('wp_nav_menu', 'wrap_only_submenu_in_div', 10, 2);
+
+
+// // Попытка экспорта изображений из папки и инсерт в поле галереи
+// add_action('acf/init', function() {
+//     $post_id = 35; // Замените на ваш пост ID
+//     import_images_to_acf_repeater($post_id);
+// });
+
+// function import_images_to_acf_repeater($post_id) {
+//     // Директория с изображениями
+//     $directory = '/home/worker/Загрузки/свадьба/';
+//     $images = scandir($directory);
+
+//     // Ключи ACF
+//     $repeater_field_key = 'декор_свадеб'; // Замените на ваш ключ повторителя
+//     $sub_field_key = 'фото'; // Замените на ваш ключ подполей изображения
+
+//     // Очистим повторитель, если нужно, перед добавлением
+//     delete_field($repeater_field_key, $post_id);
+
+//     // Фильтрация изображений
+//     $valid_extensions = array('jpg', 'jpeg', 'png', 'gif');
+//     foreach ($images as $image) {
+//         $file_extension = pathinfo($image, PATHINFO_EXTENSION);
+//         if (in_array(strtolower($file_extension), $valid_extensions)) {
+//             // Загружаем изображение в медиабиблиотеку
+//             $file_path = $directory . $image;
+//             $upload_id = upload_image_to_wordpress($file_path);
+            
+//             if ($upload_id) {
+//                 // Добавляем изображение в ACF-повторитель
+//                 $value = array(
+//                     $sub_field_key => $upload_id, // ID загруженного изображения
+//                 );
+//                 add_row($repeater_field_key, $value, $post_id); // ACF функция добавления строки в повторитель
+//             }
+//         }
+//     }
+// }
+
+// // Функция для загрузки изображения в медиабиблиотеку
+// function upload_image_to_wordpress($file_path) {
+//     if (!file_exists($file_path)) {
+//         return false;
+//     }
+
+//     $file_name = basename($file_path);
+//     $upload_file = wp_upload_bits($file_name, null, file_get_contents($file_path));
+
+//     if (!$upload_file['error']) {
+//         $wp_filetype = wp_check_filetype($file_name, null);
+//         $attachment = array(
+//             'post_mime_type' => $wp_filetype['type'],
+//             'post_title' => sanitize_file_name($file_name),
+//             'post_content' => '',
+//             'post_status' => 'inherit',
+//         );
+
+//         $attachment_id = wp_insert_attachment($attachment, $upload_file['file']);
+//         require_once(ABSPATH . 'wp-admin/includes/image.php');
+//         $attach_data = wp_generate_attachment_metadata($attachment_id, $upload_file['file']);
+//         wp_update_attachment_metadata($attachment_id, $attach_data);
+
+//         return $attachment_id;
+//     }
+
+//     return false;
+// }

@@ -525,8 +525,8 @@ get_header(); ?>
     <button class="filter filter-btn" data-filter=".art-perf">Арт-перфоманс</button>
     <button class="filter filter-btn" data-filter=".write-wall">Роспись стен</button>
     <button class="filter filter-btn" data-filter=".rent-got">Аренда готовых декораций</button>
-    <button class="filter filter-btn" data-filter=".rent-got">Декор детских мероприятий</button>
-    <button class="filter filter-btn" data-filter=".rent-got">Новогодний декор</button>
+    <button class="filter filter-btn" data-filter=".dekor-child">Декор детских мероприятий</button>
+    <button class="filter filter-btn" data-filter=".new-year">Новогодний декор</button>
   </div>
  <?php
          if( have_rows('dek-sv') ){
@@ -573,8 +573,8 @@ get_header(); ?>
       }
    }?>
 <?php
-         if( have_rows('арт-перфоманс') ){
-             while ( have_rows('арт-перфоманс') ) { the_row();
+         if( have_rows('арт_перфоманс') ){
+             while ( have_rows('арт_перфоманс') ) { the_row();
      ?>         
 <a href="#" class="lightBox"><img class="mix art-perf thumb" src="<?php echo get_sub_field('фото'); ?>"></a>
      <?php
@@ -593,6 +593,22 @@ get_header(); ?>
              while ( have_rows('аренда_готовых_декораций') ) { the_row();
      ?>         
 <a href="#" class="lightBox"><img class="mix rent-got thumb" src="<?php echo get_sub_field('фото'); ?>"></a>
+     <?php
+      }
+   }?>
+   <?php
+         if( have_rows('декор_детских_мероприятий') ){
+             while ( have_rows('декор_детских_мероприятий') ) { the_row();
+     ?>         
+<a href="#" class="lightBox"><img class="mix dekor-child thumb" src="<?php echo get_sub_field('фото'); ?>"></a>
+     <?php
+      }
+   }?>
+   <?php
+         if( have_rows('новогодний_декор') ){
+             while ( have_rows('новогодний_декор') ) { the_row();
+     ?>         
+<a href="#" class="lightBox"><img class="mix new-year thumb" src="<?php echo get_sub_field('фото'); ?>"></a>
      <?php
       }
    }?>
