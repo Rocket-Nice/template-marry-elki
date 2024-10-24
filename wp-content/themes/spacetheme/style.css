@@ -306,7 +306,7 @@ sup {
     display: none;
     position: absolute;
     bottom: 60px;
-    right: 0;
+    right: 9px;
     opacity: 0;
     transition: all 0.5s ease;
 }
@@ -324,7 +324,9 @@ sup {
 }
 
 .social-icon.telegram {
-    background-image: url('imeges/teleg.png');
+    background-image: url('imeges/telega.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .social-icon.phone {
