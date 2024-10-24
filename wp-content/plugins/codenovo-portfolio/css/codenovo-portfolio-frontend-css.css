@@ -10,6 +10,10 @@
     display: none;
 }
 
+#cnfolioHolder {
+    margin-bottom: 30px;
+}
+
 #cnfolioHolder ul li {
     list-style-type: none;
     padding: 0;
@@ -57,7 +61,21 @@ ul#cnFilterOptions li.active a {
     color: #111;
 }
 
-ul.cnOurHolder {
+.cnOurHolder li {
+    max-width: 780px;
+    width: 100%;
+    box-sizing: border-box;
+    max-height: 520px;
+    height: 100%;
+}
+
+.cnOurHolder img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ul.cnOurHolder {
     width: 100%;
     overflow: hidden;
     margin: 0;
@@ -85,7 +103,7 @@ ul.cnOurHolder li.item .cnportfolio-image {
 ul.cnOurHolder li.item .cnportfolio-image>img {
     width: 100%;
     height: auto;
-}
+} */
 
 #cnfolioHolder .cnportfolio-hover .cnlinks a {
     display: block;
@@ -144,6 +162,10 @@ ul.cnOurHolder li.item .cnportfolio-image>img {
     background: url("../img/popup-icon.png") no-repeat center;
 }
 
+#cnfolioHolder .slider__list {
+    height: 100% !important;
+}
+
 .zoom-anim-dialog .image {
     width: 100%;
     margin: 20px 0;
@@ -169,12 +191,12 @@ ul.cnOurHolder li.item .cnportfolio-image>img {
     font-size: 12px;
 }
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     ul.cnOurHolder li.item {
         width: 100%;
         float: none;
     }
-}
+} */
 
 
 /*magnific-popup*/
@@ -183,7 +205,7 @@ ul.cnOurHolder li.item .cnportfolio-image>img {
 /* Magnific Popup CSS */
 
 .zoom-anim-dialog {
-        background: white;
+    background: white;
     padding: 5px 5px;
     text-align: left;
     max-width: 600px;
@@ -584,8 +606,80 @@ img.mfp-img {
     cursor: pointer;
 }
 
+@media (min-width: 992px) and (max-width: 1100px) {
+    .container.cnfolio {
+        width: 970px !important;
+    }
+
+    #cnfolioHolder .controls {
+        margin-left: 0 !important;
+    }
+}
+
+@media(max-width: 992px) {
+    #cnfolioHolder .controls {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    #cnfolioHolder .controls__line {
+        width: 100% !important;
+    }
+
+    #cnfolioHolder .controls__circle {
+        width: 13.3px !important;
+        height: 13.3px !important;
+        margin-right: 10px !important;
+    }
+
+    #cnfolioHolder .controls__arrows {
+        margin-right: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    #cnfolioHolder .controls__arrow {
+        margin-right: 10px !important;
+    }
+}
+
+@media(max-width: 576px) {
+    #cnfolioHolder .controls {
+        flex-direction: column;
+        justify-content: space-between !important;
+    }
+
+    #cnfolioHolder .controls__arrows {
+        width: 100% !important;
+        display: block !important;
+        margin-right: unset !important;
+    }
+
+    #cnfolioHolder .controls__circle {
+        width: 27.3px !important;
+        height: 27.3px !important;
+    }
+
+    #cnfolioHolder .controls__arrow {
+        width: 44px;
+        height: 35px;
+    }
+
+    .cnOurHolder img {
+        max-width: unset !important;
+        height: 100% !important;
+    }
+
+    .cnOurHolder li {
+        max-width: unset !important;
+        width: 1% !important;
+    }
+}
+
 @media screen and (max-width: 800px) and (orientation: landscape),
 screen and (max-height: 300px) {
+
     /**
     * Remove all paddings around the image on small screen
     */
@@ -593,17 +687,21 @@ screen and (max-height: 300px) {
         padding-left: 0;
         padding-right: 0;
     }
+
     .mfp-img-mobile img.mfp-img {
         padding: 0;
     }
+
     .mfp-img-mobile .mfp-figure:after {
         top: 0;
         bottom: 0;
     }
+
     .mfp-img-mobile .mfp-figure small {
         display: inline;
         margin-left: 5px;
     }
+
     .mfp-img-mobile .mfp-bottom-bar {
         background: rgba(0, 0, 0, 0.6);
         bottom: 0;
@@ -615,13 +713,16 @@ screen and (max-height: 300px) {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
+
     .mfp-img-mobile .mfp-bottom-bar:empty {
         padding: 0;
     }
+
     .mfp-img-mobile .mfp-counter {
         right: 5px;
         top: 3px;
     }
+
     .mfp-img-mobile .mfp-close {
         top: 0;
         right: 0;
@@ -640,14 +741,17 @@ screen and (max-height: 300px) {
         -webkit-transform: scale(0.75);
         transform: scale(0.75);
     }
+
     .mfp-arrow-left {
         -webkit-transform-origin: 0;
         transform-origin: 0;
     }
+
     .mfp-arrow-right {
         -webkit-transform-origin: 100%;
         transform-origin: 100%;
     }
+
     .mfp-container {
         padding-left: 6px;
         padding-right: 6px;

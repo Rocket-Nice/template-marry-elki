@@ -21,191 +21,200 @@
 
 
 ?>
-    <div class="container f-container">
-        <div class="live__footer live__footer_mobile">
-            <ul class="live__social live__footer_item">
+<div class="container f-container">
+    <div class="live__footer live__footer_mobile">
+        <ul class="live__social live__footer_item">
+            <li class="live__social_item">
+                <a href="<?php echo get_theme_mod('example_textbox4', ''); ?>" class="live__social_link" target="blank">
+
+
+
+                    <img src="<?php bloginfo('template_url') ?>/imeges/insta.png" alt="instagramm" class="live__social_img">
+
+
+
+                </a>
+            </li>
+            <!-- live__social_item -->
+            <li class="live__social_item live__item_vk">
+                <a href="<?php echo get_theme_mod('example_textbox5', ''); ?>" class="live__social_link" target="blank">
+
+
+
+                    <img src="<?php bloginfo('template_url') ?>/imeges/vk.png" alt="instagramm" class="live__social_img">
+
+
+
+                </a>
+            </li>
+            <!-- live__social_item -->
+            <li class="live__social_item">
+                <a href="<?php echo get_theme_mod('example_textbox6', ''); ?>" class="live__social_link" target="blank">
+
+
+
+                    <img src="<?php bloginfo('template_url') ?>/imeges/facebook.png" alt="instagramm" class="live__social_img">
+
+
+
+                </a>
+            </li>
+            <!-- live__social_item -->
+        </ul>
+        <!-- /.live__social -->
+        <div class="live__adres live__footer_item">
+            <p class="live__adres_text">
+                <?php echo get_theme_mod('example_textbox2', ''); ?>
+            </p>
+        </div>
+        <div class="live__phone live__footer_item">
+            <img src="<?php bloginfo('template_url') ?>/imeges/live_phone.png" alt="phone" class="live__phone_ing">
+            <p class="live__phone_text">
+                <!-- <?php echo get_theme_mod('example_textbox3', ''); ?> -->
+                +7 916 571-61-74
+            </p>
+
+        </div>
+        <!-- /.live__phone -->
+        <div class="live__adres live__adres_w100 live__footer_item">
+            <p class="live__adres_text">
+                <?php echo get_theme_mod('example_textbox', ''); ?>
+            </p>
+        </div>
+        <div class="live__cop live__footer_item">
+            <p class="live__cop_text">
+                © 2017 MARRYSOL
+            </p>
+            <p class="live__cop_text">
+                <span class="iOne">Разработано в <a target="_blank" href="http://i1-web.ru/"><span>i</span>One digital agency</a></span>
+            </p>
+        </div>
+        <!-- /.live__cop -->
+    </div>
+    <!-- live__footer -->
+    <div class="live__footer live__footer_desctp">
+        <div class="live__cop live__footer_item">
+            <p class="live__cop_text">
+                © 2017 MARRYSOL
+            </p>
+            <p class="live__cop_text">
+                <span class="iOne">Разработано в <a target="_blank" href="http://i1-web.ru/"><span>i</span>One digital agency</a></span>
+            </p>
+        </div>
+        <!-- /.live__cop -->
+        <div class="live__adres live__footer_item">
+            <p class="live__adres_text">
+                <?php echo get_theme_mod('example_textbox', ''); ?>
+                <?php echo get_theme_mod('example_textbox2', ''); ?>
+            </p>
+        </div>
+        <div class="live__phone live__footer_item">
+            <img src="<?php bloginfo('template_url') ?>/imeges/live_phone.png" alt="phone" class="live__phone_ing">
+            <p class="live__phone_text">
+                +7 916 571-61-74
+            </p>
+        </div>
+
+        <!-- /.live__phone -->
+        <div class="live__social ">
+            <span style="font-family: MullerLight, sans-serif; font-size: 2.2em; color: #333;">Мы в соц сетях</span>
+            <ul class="live__footer_item" style="margin-top: 10px;">
                 <li class="live__social_item">
                     <a href="<?php echo get_theme_mod('example_textbox4', ''); ?>" class="live__social_link" target="blank">
 
-                        
 
-                                    <img src="<?php bloginfo('template_url') ?>/imeges/insta.png" alt="instagramm" class="live__social_img">
 
-                        
+                        <img src="<?php bloginfo('template_url') ?>/imeges/insta.png" alt="instagramm" class="live__social_img">
 
-                                </a>
+
+
+                    </a>
                 </li>
                 <!-- live__social_item -->
                 <li class="live__social_item live__item_vk">
                     <a href="<?php echo get_theme_mod('example_textbox5', ''); ?>" class="live__social_link" target="blank">
 
-                        
 
-                                    <img src="<?php bloginfo('template_url') ?>/imeges/vk.png" alt="instagramm" class="live__social_img">
 
-                        
+                        <img src="<?php bloginfo('template_url') ?>/imeges/vk.png" alt="instagramm" class="live__social_img">
 
-                                </a>
+
+
+                    </a>
                 </li>
                 <!-- live__social_item -->
                 <li class="live__social_item">
                     <a href="<?php echo get_theme_mod('example_textbox6', ''); ?>" class="live__social_link" target="blank">
 
-                        
 
-                                    <img src="<?php bloginfo('template_url') ?>/imeges/facebook.png" alt="instagramm" class="live__social_img">
 
-                        
+                        <img src="<?php bloginfo('template_url') ?>/imeges/facebook.png" alt="instagramm" class="live__social_img">
 
-                                </a>
+
+
+                    </a>
                 </li>
                 <!-- live__social_item -->
             </ul>
-            <!-- /.live__social -->
-            <div class="live__adres live__footer_item">
-                <p class="live__adres_text">
-                    <?php echo get_theme_mod('example_textbox2', ''); ?>
-                </p>
-            </div>
-            <div class="live__phone live__footer_item">
-                <img src="<?php bloginfo('template_url') ?>/imeges/live_phone.png" alt="phone" class="live__phone_ing">
-                <p class="live__phone_text">
-                    <!-- <?php echo get_theme_mod('example_textbox3', ''); ?> -->
-                    +7 916 571-61-74
-                </p>
-                
-            </div>
-            <!-- /.live__phone -->
-            <div class="live__adres live__adres_w100 live__footer_item">
-                <p class="live__adres_text">
-                    <?php echo get_theme_mod('example_textbox', ''); ?>
-                </p>
-            </div>
-            <div class="live__cop live__footer_item">
-                <p class="live__cop_text">
-                    © 2017 MARRYSOL
-                </p>
-                <p class="live__cop_text">
-                    <span class="iOne">Разработано в <a target="_blank" href="http://i1-web.ru/"><span>i</span>One digital agency</a></span>
-                </p>
-            </div>
-            <!-- /.live__cop -->
         </div>
-        <!-- live__footer -->
-        <div class="live__footer live__footer_desctp">
-            <div class="live__cop live__footer_item">
-                <p class="live__cop_text">
-                    © 2017 MARRYSOL
-                </p>
-                <p class="live__cop_text">
-                    <span class="iOne">Разработано в <a target="_blank" href="http://i1-web.ru/"><span>i</span>One digital agency</a></span>
-                </p>
-            </div>
-            <!-- /.live__cop -->
-            <div class="live__adres live__footer_item">
-                <p class="live__adres_text">
-                    <?php echo get_theme_mod('example_textbox', ''); ?>
-                    <?php echo get_theme_mod('example_textbox2', ''); ?>
-                </p>
-            </div>
-            <div class="live__phone live__footer_item">
-                <img src="<?php bloginfo('template_url') ?>/imeges/live_phone.png" alt="phone" class="live__phone_ing">
-                <p class="live__phone_text">
-                     +7 916 571-61-74
-                </p>
-            </div>
-  
-            <!-- /.live__phone -->
-            <ul class="live__social live__footer_item">
-                <li class="live__social_item">
-                    <a href="<?php echo get_theme_mod('example_textbox4', ''); ?>" class="live__social_link" target="blank">
-
-                        
-
-                                    <img src="<?php bloginfo('template_url') ?>/imeges/insta.png" alt="instagramm" class="live__social_img">
-
-                        
-
-                                </a>
-                </li>
-                <!-- live__social_item -->
-                <li class="live__social_item live__item_vk">
-                    <a href="<?php echo get_theme_mod('example_textbox5', ''); ?>" class="live__social_link" target="blank">
-
-                        
-
-                                    <img src="<?php bloginfo('template_url') ?>/imeges/vk.png" alt="instagramm" class="live__social_img">
-
-                        
-
-                                </a>
-                </li>
-                <!-- live__social_item -->
-                <li class="live__social_item">
-                    <a href="<?php echo get_theme_mod('example_textbox6', ''); ?>" class="live__social_link" target="blank">
-
-                        
-
-                                    <img src="<?php bloginfo('template_url') ?>/imeges/facebook.png" alt="instagramm" class="live__social_img">
-
-                        
-
-                                </a>
-                </li>
-                <!-- live__social_item -->
-            </ul>
-            <!-- /.live__social -->
+        <!-- /.live__social -->
+    </div>
+</div>
+</div>
+<!-- /.all-sections -->
+</div>
+<div class="call-wrapper">
+    <div class="call-border animated infinite pulse">
+        <a id="call-icon" class="call-icon" href="-#"></a>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send/?phone=79165716174&text&type=phone_number&app_absent=0" class="social-icon whatsapp"></a>
+            <a href="https://t.me/marrysol" class="social-icon telegram"></a>
+            <a href="tel:+7(916)571-61-74" class="social-icon phone"></a>
         </div>
     </div>
+</div>
+
+<!-- /.wrapper -->
+<section class="pop-up">
+    <div class="pop-up__bg"></div>
+    <div class="pop-up__close">
+        <div class="pop-up__close-line pop-up__close-line-1"></div>
+        <div class="pop-up__close-line pop-up__close-line-2"></div>
     </div>
-    <!-- /.all-sections -->
+    <!-- /.pop-up__close -->
+    <video class="pop-up__video pop_up__contant" playsinline autoplay controls></video>
+    <iframe class="pop-up__youtobe pop_up__contant" width="560" height="315" src="" frameborder="0" allowfullscreen autoplay="1"></iframe>
+    <img src="" alt="" class="pop-up__img pop_up__contant">
+    <div class="pop-up__win pop_up__contant">
+        <div class="pop-up__title">
+            Спасибо за обращение!
+        </div>
+        <!-- /.pop-up__title -->
+        <div class="pop-up__text">
+            Мы свяжемся с Вами в ближайшее время!
+        </div>
+        <!-- /.pop-up__text -->
     </div>
-    <div class="call-wrapper">
-                            <div class="call-border animated infinite pulse">
-                                <a class="call-icon" href="tel:+7(916)571-61-74"></a>
-                            </div>
-                        </div>
-    <!-- /.wrapper -->
-    <section class="pop-up">
-        <div class="pop-up__bg"></div>
-        <div class="pop-up__close">
-            <div class="pop-up__close-line pop-up__close-line-1"></div>
-            <div class="pop-up__close-line pop-up__close-line-2"></div>
-        </div>
-        <!-- /.pop-up__close -->
-        <video class="pop-up__video pop_up__contant" playsinline autoplay controls></video>
-        <iframe class="pop-up__youtobe pop_up__contant" width="560" height="315" src="" frameborder="0" allowfullscreen autoplay="1"></iframe>
-        <img src="" alt="" class="pop-up__img pop_up__contant">
-        <div class="pop-up__win pop_up__contant">
-            <div class="pop-up__title">
-                Спасибо за обращение!
-            </div>
-            <!-- /.pop-up__title -->
-            <div class="pop-up__text">
-                Мы свяжемся с Вами в ближайшее время!
-            </div>
-            <!-- /.pop-up__text -->
-        </div>
-        <!-- /.pop-up__win -->
-    </section>
-    <script src="<?php bloginfo('template_url') ?>/js/jquery-3.2.1.min.js"></script>
-    <script src="<?php bloginfo('template_url') ?>/js/header.js"></script>
-    <script src="<?php bloginfo('template_url') ?>/js/photo-slider.js"></script>
-    <script src="<?php bloginfo('template_url') ?>/js/video-slider.js"></script>
-    <script src="<?php bloginfo('template_url') ?>/js/why.js"></script>
-    <!-- <script src="<?php bloginfo('template_url') ?>/js/send.js"></script> -->
-    <script src="<?php bloginfo('template_url') ?>/js/live-slider.js"></script>
-    <script src="<?php bloginfo('template_url') ?>/js/pop-up.js"></script>
-    <script src="<?php bloginfo('template_url') ?>/js/owl.carousel.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script>
+    <!-- /.pop-up__win -->
+</section>
+<script src="<?php bloginfo('template_url') ?>/js/jquery-3.2.1.min.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/header.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/photo-slider.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/video-slider.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/why.js"></script>
+<!-- <script src="<?php bloginfo('template_url') ?>/js/send.js"></script> -->
+<script src="<?php bloginfo('template_url') ?>/js/live-slider.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/pop-up.js"></script>
+<script src="<?php bloginfo('template_url') ?>/js/owl.carousel.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<script>
     $('#menu-item-24 > a').click(function() {
-   
+
         $('#menu-item-24 > a').next('.parent-sub-menu').find('.sub-menu').slideToggle('1000');
         $('#menu-item-26 > a').next('.parent-sub-menu').find('.sub-menu').css('display', 'none');
         return false;
     });
-    
+
     function handleMenuInteractions() {
         let windowWidth = $(window).width();
 
@@ -227,7 +236,7 @@
                 }, 300);
             });
         } else {
-            $('#menu-item-26').off('mouseenter mouseleave'); 
+            $('#menu-item-26').off('mouseenter mouseleave');
             $('#menu-item-26 > a').off('click').on('click', function() {
                 $('#menu-item-26 > a').next('.parent-sub-menu').find('.sub-menu').slideToggle('1000');
                 return false;
@@ -240,10 +249,24 @@
     $(window).resize(function() {
         handleMenuInteractions();
     });
+</script>
 
-    </script>
+<script>
+    document.getElementById('call-icon').addEventListener('click', function(e) {
+        e.preventDefault();
+        const callBorder = this.parentElement;
+        callBorder.classList.toggle('active');
 
-    <script>
+        const socialIcons = callBorder.querySelector('.social-icons');
+        if (socialIcons) {
+            if (socialIcons.style.display === "block") {
+                socialIcons.style.display = "none";
+            } else {
+                socialIcons.style.display = "block";
+            }
+        }
+    });
+
     jQuery(document).ready(function() {
 
 
@@ -393,10 +416,10 @@
 
 
     });
-    </script>
-    <?php wp_footer(); ?>
+</script>
+<?php wp_footer(); ?>
 
-       <script>
+<script>
     $(function($) {
         var contents = $('.accordeon-content');
         var titles = $('.accordeon-title');
@@ -415,9 +438,8 @@
             }
         });
     });
- 
-    </script>
+</script>
 
-    </body>
+</body>
 
-    </html>
+</html>
